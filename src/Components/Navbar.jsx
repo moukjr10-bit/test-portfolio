@@ -22,7 +22,8 @@ function Navbar() {
          className="login-btn">
           {isOn ? "ON" : "OFF"}
           
-        </button>
+        </button> 
+        <p></p>
       </div>
     </nav>
   );
