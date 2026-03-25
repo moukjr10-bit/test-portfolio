@@ -1,26 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import projects from "../Data/Project";
+import ProjectCard from "../Components/ProjectCard";
 
 function Projects() {
-  const [show, setShow] = useState(false);
-
   return (
-    <section>
-      <h2>Mes Projets</h2>
+    <section className="projects">
 
-      {/* bouton */}
-      <button onClick={() => setShow(!show)}>
-        {show ? "Masquer les projets" : "Afficher les projets"}
-      </button>
+      <h1>Mes Projets</h1>
 
-      {/* liste */}
-      {show && (
-        <ul>
-          <li>📱 Application mobile de gestion de tâches</li>
-          <li>🌐 Site e-commerce avec React</li>
-          <li>👥 Application de gestion des utilisateurs (API)</li>
-          <li>📝 Blog dynamique avec JavaScript</li>
-        </ul>
-      )}
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            image={project.image}
+          />
+        ))}
+      </div>
+
     </section>
   );
 }

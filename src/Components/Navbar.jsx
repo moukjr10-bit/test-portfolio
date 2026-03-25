@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
-  const [isOn, setIsOn] = useState(false);
-
   return (
     <nav className="navbar">
-      <h2>Mon Navbar</h2>
+      {/* LOGO */}
+      <h2>Mon Portfolio</h2>
 
       {/* MENU CENTRE */}
       <div className="nav-center">
@@ -16,14 +15,11 @@ function Navbar() {
         <NavLink to="/contact">Contact</NavLink>
       </div>
 
-      {/* BOUTON ON/OFF */}
+      {/* LOGIN DROITE */}
       <div className="nav-right">
-        <button onClick={() => setIsOn(!isOn)}
-         className="login-btn">
-          {isOn ? "ON" : "OFF"}
-          
-        </button> 
-        <p></p>
+        <NavLink to="/login" className="login-btn">
+          Login
+        </NavLink>
       </div>
     </nav>
   );

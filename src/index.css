@@ -84,14 +84,21 @@ section {
 .home {
   min-height: calc(100vh - 140px);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px; /* espace entre image et texte */
 
   background: #ee0400;
   color: white;
-  text-align: center;
-  padding: 20px;
+  padding: 40px;
+}
+.profile-img{
+  width:250px;
+  height:500px;
+  object-fit: cover;
+  border-color:50%; 
+  border: 10px solid white;
+  margin:20px 0;
 }
 
 .home h1 {
@@ -140,17 +147,40 @@ section p {
 }
 
 /* ===== PROJECTS ===== */
-ul {
-  list-style: none;
-  padding: 0;
+.projects{
+  text-align:center;
+   background: #0f172a;
+  color: white;
+  padding:40px;
 }
 
-ul li {
-  background: #f1f5f9;
-  margin: 10px auto;
-  padding: 15px;
-  max-width: 500px;
-  border-radius: 8px;
+.projects-container{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px; 
+}
+
+.project-card{
+  width:250px;
+  background:#f5f5f5;
+  border-radius:10px;
+  padding:15px;
+  color: #0f172a;
+}
+
+.project-img{
+  width:100%;
+  border-radius:10px;
+}
+
+.project-card button{
+  margin-top:10px;
+  padding:8px 15px;
+  border:none;
+  background:#0a1a33;
+  color:rgb(34, 27, 27);
+  cursor:pointer;
 }
 
 /* bouton afficher projets */
@@ -158,7 +188,7 @@ button {
   padding: 10px 15px;
   margin-bottom: 20px;
   background: #0f172a;
-  color: white;
+  color: #0f172a;
   border: none;
   border-radius: 6px;
   cursor: pointer;
