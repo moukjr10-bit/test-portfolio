@@ -6,10 +6,10 @@ function Contact() {
       <h2>Contact</h2>
 
       <form className="contact-form">
-        <input type="text" placeholder="Nom" required />
-        <input type="text" placeholder="Prénom" required />
-        <input type="email" placeholder="Email" required />
-        <input type="text" placeholder="Numéro de téléphone" required />
+        <input type="Nom" placeholder="KANTE" required />
+        <input type="Prenom" placeholder="Moussa" required />
+        <input type="email" placeholder="moukjr10@gmail.com" required />
+        <input type="Numero" placeholder="777765826" required />
         <textarea placeholder="Votre message"></textarea>
 
         <button type="submit">Envoyer</button>
