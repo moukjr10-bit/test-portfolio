@@ -9,6 +9,7 @@ function Home() {
 
        <div>
          <h1>Bienvenue sur mon portfolio</h1>
+              <h2>Je suis Moussa Kanté</h2>
             <p>
                Je suis étudiant en développement web et mobile à l’ISEP, passionné par la création
                d’applications modernes et performantes. J’ai réalisé plusieurs projets en React et
