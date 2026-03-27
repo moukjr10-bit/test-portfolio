@@ -121,7 +121,7 @@ section {
   height:500px;
   object-fit: cover;
   border-color:50%; 
-  border: 10px solid white;
+  border-radius: 50px;
   margin:20px 0;
 }
 
