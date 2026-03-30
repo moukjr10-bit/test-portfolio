@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function ProjectCard({ title, image }) {
   return (
-    <div className="project-card">
+    <NavLink to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`} className="project-card">
 
       <img src={image} alt={title} className="project-img" />
 
@@ -10,7 +11,7 @@ function ProjectCard({ title, image }) {
 
      
 
-    </div>
+    </NavLink>
   );
 }
 

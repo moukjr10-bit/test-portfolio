@@ -5,20 +5,32 @@ import project4 from "../assets/project4.jpg";
 
 const projects = [
   {
-    title: "Application mobile de gestion de tâches",
-    image: project1
+    id: 1,
+    title: "Gestion de stock avec React",
+    description: "Un site de commerce électronique développé avec React et intégré à une API de paiement.",
+    image: project1,
+    technologies: ["React1", "Node.js", "MongoDB"]
   },
   {
+    id: 2,
     title: "Site e-commerce avec React",
-    image: project2
+    description: "Un site de commerce électronique développé avec React et intégré à une API de paiement.",
+    image: project2,
+    technologies: ["React", "Node.js", "MongoDB"]
   },
   {
+    id: 3,
     title: "Application de gestion des utilisateurs (API)",
-    image: project3
+    description: "Une API pour gérer les utilisateurs d'une application.",
+    image: project3,
+    technologies: ["Node.js", "Express", "MongoDB"]
   },
   {
+    id: 4,
     title: "Blog dynamique avec JavaScript",
-    image: project4
+    description: "Un blog fonctionnel développé avec JavaScript et intégré à une base de données.",
+    image: project4,
+    technologies: []
   }
 ];
 

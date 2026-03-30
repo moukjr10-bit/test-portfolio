@@ -9,11 +9,13 @@ function Projects() {
       <h1>Mes Projets</h1>
 
       <div className="projects-container">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <ProjectCard
-            key={index}
+            key={project.id}
             title={project.title}
             image={project.image}
+            description={project.description}
+            technologies={project.technologies}
           />
         ))}
       </div>
